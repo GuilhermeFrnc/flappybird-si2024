@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public AudioGameOver audio;
     public AudioManager audiomanager;
     public GameObject gameOverView;
     public Text scoreView;
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
         audiomanager.PlayAudio();
+        audio.StopAudio();
     }
 
     public void RestartGame()
@@ -35,6 +37,7 @@ public class GameManager : MonoBehaviour
     {
         gameOverView.SetActive(true);
         audiomanager.StopAudio();
+        audio.PlayAudio();
         Time.timeScale = 0;
     }
 }
