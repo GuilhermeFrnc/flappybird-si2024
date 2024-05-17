@@ -233,7 +233,7 @@ MonoBehaviour:
   prefab: {fileID: 6303078646940189967, guid: 426b96beec64ec94f8dfb576fe1c78d6, type: 3}
   maxHeight: 1.5
   minHeight: -1.5
-  maxTime: 1
+  maxTime: 2
 --- !u!1 &437713282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1742,7 +1742,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.95
+  m_Radius: 0.5
 --- !u!50 &2072502918
 Rigidbody2D:
   serializedVersion: 4

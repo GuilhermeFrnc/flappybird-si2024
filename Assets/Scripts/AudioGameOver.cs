@@ -9,6 +9,7 @@ public class AudioGameOver : MonoBehaviour
     public void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        StopAudio();
     }
 
     public void PlayAudio()
